@@ -1,5 +1,6 @@
 <?php
   include 'connection.php';
+  $message = "";
   $message .= " ";
   if (isset($_POST['login'])) {
   	   $uname = $_POST['uname'];

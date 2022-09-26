@@ -35,7 +35,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="AssetModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="AssetModalLabel">Add assets</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!-- bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb -->
@@ -43,14 +43,62 @@
 
                     <div class="mb-3">
                         <label for="Assetname" class="form-label">Asset name</label>
-                        <input type="text" class="form-control" id="Assetname" aria-describedby="Asset name">
+                        <input type="text" class="form-control" id="Assetname" aria-describedby="Asset name" name="name">
+                    </div>
+                    <label for="Assetname" class="form-label">Picture</label>
+                    <div class="input-group input-group-sm mb-3"> 
+                     <input type="file" class="form-control" id="inputGroupFile02">
+                     
                     </div>
 
+                    <div class="form-lable mb-4">
+                    <label class="form-label" for="form6Example7">Description</label>
+                      <textarea class="form-control" id="form6Example7" rows="3" name="description"></textarea>
+                      
+                    </div>
+
+                    <div class="input-group input-group-sm mb-3">
+                        <label for="Assetname" class="form-label">Location</label>
+                        <select class="form-select" aria-label="Default select example" name="location">
+                        <option selected>Choose Location</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option> </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Assetname" class="form-label">Manufacturer</label>
+                        <select class="form-select" aria-label="Default select example" name="manufacturer">
+                        <option selected>Choos manufacturer</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option> </select>
+                    </div>
+                    <label for="Assetname" class="form-label">atachment</label>
+                    <div class="input-group input-group-sm mb-3"> 
+                     <input type="file" class="form-control" id="inputGroupFile02">
+                     
+                    </div>
+
+                     <div class="mb-3">
+                    <div class="mb-3">
+                        <label for="Assetname" class="form-label">characteristic</label>
+                        <input type="text" class="form-control" id="Assetname" aria-describedby="Asset name">
+                     </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Add a charecteristic to db</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Assetname" class="form-label">Parent item</label>
+                        <input type="text" class="form-control" id="Assetname" aria-describedby="Asset name">
+                    </div>
                 </div>
+               
                 <!-- bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" method="post" action="asset-submitform.php">Save changes</button>
                 </div>
             </div>
         </div>
